@@ -1,2 +1,57 @@
-# MLSharp-TD-Bridge
-Sharp-TD-Bridge converts 2D images to 3D Gaussian Splats inside TouchDesigner using Apple's Sharp model. It features a portable, zero-config Python environment for local, one-click generation. No complex setup needed—just drag, drop, and create.
+# 🚀 Sharp-TD-Bridge (2D to 3D Gaussian Splatting)
+
+> **TouchDesigner 中的一键 2D 转 3D 高斯泼溅工具 | Portable AI Bridge** > **Author:** 多多GemosDodo
+
+![Project Banner](https://placehold.co/800x400?text=Place+Your+Demo+Screenshot+Here) 
+*(建议在此处替换为你实际运行时的截图或 GIF 动图)*
+
+## 📖 项目简介 (Introduction)
+
+**Sharp-TD-Bridge** 是一个为 TouchDesigner 打造的便携式 AI 桥接工具。它基于 Apple 的 Sharp 模型架构，实现了**在 TouchDesigner 内部一键将 2D 图片转换为高质量 3D Gaussian Splatting（高斯泼溅）模型**。
+
+传统的 AI 生成往往伴随着繁琐的 Python 环境配置、复杂的依赖安装（CUDA, PyTorch 等）以及命令行操作。本项目的目标是将这一过程彻底“自动化”与“黑盒化”。
+
+**设计师无需编写任何代码，只需拖入图片，即可在几十秒内获得 3D 资产。**
+
+## ✨ 核心亮点 (Features)
+
+* ⚡️ **零配置，即插即用 (Zero-Config)** 内置了完整的便携式 Python 环境（包含 PyTorch, CUDA, gsplat, sharp 等）。用户下载解压后，**无需安装 Anaconda**，直接运行 `.toe` 文件即可。
+    
+* 🔄 **全自动工作流 (Fully Automated)** 点击一个按钮，脚本自动完成：`图像保存` -> `清理旧文件` -> `调用 AI 推理` -> `重命名文件` -> `刷新 3D 视图`。
+    
+* 🎨 **TD 原生体验 (Native Integration)** * **Input**: 支持任意 TOP 图像源（Movie File In, Noise, etc.）。
+    * **Output**: 生成结果自动回填至 Point File In，直接在 TD 视窗中预览。
+    
+* 🛠 **本地离线运行 (Offline Privacy)** 所有计算完全在本地 GPU 进行，无需联网，保护数据隐私。
+
+## ⚙️ 系统要求 (Requirements)
+
+* **操作系统**: Windows 10 / 11 (64-bit)
+* **显卡**: NVIDIA 显卡 (建议显存 6GB 以上，支持 CUDA)
+* **软件**: TouchDesigner 2022.x 或 2023.x 及以上版本
+
+## 🚀 快速开始 (Getting Started)
+
+1.  **下载项目** 下载并解压整个项目文件夹。  
+    > ⚠️ **注意**：请确保解压后的路径中**不包含中文字符**（例如放 D 盘根目录），以免 Python 读取路径时报错。
+
+2.  **启动工程** 双击运行 `MLSharp-TD-Bridge-by-GemosDodo.toe`。
+
+3.  **连接图片** 在 TouchDesigner 中，将你的图片源（例如 `Movie File In`）连接到名为 **`input`** 的接口。  
+    *(建议输入分辨率控制在 512x512 或 768x768 以防显存溢出)*。
+
+4.  **一键生成** 选中 `Sharp_3D_Bridge` 组件，在属性面板点击 **`Generate`** 按钮。
+
+5.  **查看结果** 等待约 30-60 秒（取决于显卡性能），生成的 3D 模型将自动加载到右侧的预览视窗中。
+
+## 📂 文件结构 (File Structure)
+
+```text
+Sharp-TD-Bridge/
+├── python_env/           # [核心] 内置的便携式 Python 环境 (解压后约 3-4GB)
+├── model_assets/         # 资源文件夹
+│   ├── inputs/           # 自动保存的输入图
+│   ├── outputs/          # 生成的 .ply 模型
+│   └── sharp_xxx.pt      # 预训练模型权重
+├── MLSharp-TD-Bridge.toe # 主工程文件
+└── README.md             # 说明文档
