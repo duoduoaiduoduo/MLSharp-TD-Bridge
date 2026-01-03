@@ -1,52 +1,52 @@
-# 🚀 Sharp-TD-Bridge (2D to 3D Gaussian Splatting)
+# Sharp-TD-Bridge (2D to 3D Gaussian Splatting)
 
-> **TouchDesigner 中的一键 2D 转 3D 高斯泼溅工具 | Portable AI Bridge** > **Author:** 多多GemosDodo
+> **One-click 2D to 3D Gaussian Splatting Tool for TouchDesigner | Portable AI Bridge** > **Author:** GemosDodo
 
+[中文版 (Chinese Version)](./README_zh-CN.md) | [English Version](./README.md)
 
 <img width="1780" height="842" alt="image" src="https://github.com/user-attachments/assets/94273fd8-546f-41e1-b8c9-089944bb0463" />
 
+## Introduction
 
-##  项目简介 (Introduction)
+**Sharp-TD-Bridge** is a portable AI bridge tool built specifically for TouchDesigner. Based on Apple's **Sharp** model architecture, it achieves **one-click conversion of 2D images into high-quality 3D Gaussian Splatting models directly within TouchDesigner**.
 
-**Sharp-TD-Bridge** 是一个为 TouchDesigner 打造的便携式 AI 桥接工具。它基于 Apple 的 Sharp 模型架构，实现了**在 TouchDesigner 内部一键将 2D 图片转换为高质量 3D Gaussian Splatting（高斯泼溅）模型**。
+Traditional AI generation often involves tedious Python environment configuration, complex dependency installations (CUDA, PyTorch, etc.), and command-line operations. The goal of this project is to completely "automate" and "black-box" this process.
 
-传统的 AI 生成往往伴随着繁琐的 Python 环境配置、复杂的依赖安装（CUDA, PyTorch 等）以及命令行操作。本项目的目标是将这一过程彻底“自动化”与“黑盒化”。
+**Designers do not need to write a single line of code. Simply drag in an image, and obtain 3D assets within seconds.**
 
-**设计师无需编写任何代码，只需拖入图片，即可在几十秒内获得 3D 资产。**
+## Features
 
-##  核心亮点 (Features)
+* **Zero-Config & Plug-and-Play** Includes a complete portable Python environment (containing PyTorch, CUDA, gsplat, sharp, etc.). After downloading and unzipping, there is **no need to install Anaconda**. Just run the `.toe` file directly.
 
-*  **零配置，即插即用 (Zero-Config)** 内置了完整的便携式 Python 环境（包含 PyTorch, CUDA, gsplat, sharp 等）。用户下载解压后，**无需安装 Anaconda**，直接运行 `.toe` 文件即可。
-    
-*  **全自动工作流 (Fully Automated)** 点击一个按钮，脚本自动完成：`图像保存` -> `清理旧文件` -> `调用 AI 推理` -> `重命名文件` -> `刷新 3D 视图`。
-    
-*  **TD 原生体验 (Native Integration)** * **Input**: 支持任意 TOP 图像源（Movie File In, Noise, etc.）。
-    * **Output**: 生成结果自动回填至 Point File In，直接在 TD 视窗中预览。
-    
-* 🛠 **本地离线运行 (Offline Privacy)** 所有计算完全在本地 GPU 进行，无需联网，保护数据隐私。
+* **Fully Automated Workflow** With a single button click, the script automatically handles: `Save Image` -> `Clean Old Files` -> `AI Inference` -> `Rename Files` -> `Refresh 3D View`.
 
-##  系统要求 (Requirements)
+* **Native TouchDesigner Integration** * **Input**: Supports any TOP image source (Movie File In, Noise, etc.).
+    * **Output**: Generated results are automatically loaded back into a Point File In for immediate preview in the TD viewport.
 
-* **操作系统**: Windows 10 / 11 (64-bit)
-* **显卡**: NVIDIA 显卡 (建议显存 6GB 以上，支持 CUDA)
-* **软件**: TouchDesigner 2022.x 或 2023.x 及以上版本
+* 🛠 **Offline Privacy** All calculations are performed locally on your GPU. No internet connection is required, ensuring data privacy.
 
-##  快速开始 (Getting Started)
+## Requirements
 
-1.  **下载项目** 下载并解压整个项目文件夹。  
-    >  **注意**：请确保解压后的路径中**不包含中文字符**（例如放 D 盘根目录），以免 Python 读取路径时报错。
+* **OS**: Windows 10 / 11 (64-bit)
+* **GPU**: NVIDIA GPU (Recommended: 6GB+ VRAM, CUDA support required)
+* **Software**: TouchDesigner 2022.x or 2023.x and above
 
-2.  **启动工程** 双击运行 `MLSharp-TD-Bridge-by-GemosDodo.toe`。
+## Getting Started
 
-3.  **一键生成** 选中 `Sharp_3D_Bridge` 组件，在属性面板点击 **`Generate`** 按钮。
+1.  **Download the Project** Download and unzip the entire project folder.  
+    > **Note**: Please ensure the unzipped path **does not contain non-English characters** (e.g., placing it at the root of the D drive is recommended) to avoid Python path errors.
 
-4.  **查看结果** 等待约 30-60 秒（取决于显卡性能），生成的 3D 模型将自动加载到右侧的预览视窗中。
+2.  **Launch the Project** Double-click to run `MLSharp-TD-Bridge-by-GemosDodo.toe`.
 
-##  特别鸣谢 （Acknowledgements）
+3.  **One-Click Generation** Select the `Sharp_3D_Bridge` component. In the custom parameters panel, click the **`Generate`** button.
 
-本项目还利用了由Yea Chen作者大佬开源的Touchdesigner 3D Gaussian Splatting Toolkits，方便展示生成出来的高斯泼溅3D模型。
+4.  **View Results** Wait for approximately 30-60 seconds (depending on GPU performance). The generated 3D model will automatically load into the preview window on the right.
 
-这也是本人制作的第一个开源项目，也是站在巨人的肩膀上了哈哈哈，本项目不做任何盈利，免费开源给各位，希望大家在TD的学习或者创作过程中使用愉快！！！！
+## Acknowledgements
 
-ML_Sharp GitHub：https://github.com/apple/ml-sharp
-Touchdesigner 3D Gaussian Splatting Toolkits Github：https://github.com/yeataro/TD-Gaussian-Splatting
+This project utilizes the **TouchDesigner 3D Gaussian Splatting Toolkits** open-sourced by **Yea Chen** to visualize the generated Gaussian Splatting 3D models.
+
+This is my first open-source project, standing on the shoulders of giants. This project is non-profit and free for everyone. I hope you enjoy using it in your TouchDesigner learning or creative process!
+
+* **ML_Sharp GitHub**: [https://github.com/apple/ml-sharp](https://github.com/apple/ml-sharp)
+* **TouchDesigner 3D Gaussian Splatting Toolkits**: [https://github.com/yeataro/TD-Gaussian-Splatting](https://github.com/yeataro/TD-Gaussian-Splatting)
