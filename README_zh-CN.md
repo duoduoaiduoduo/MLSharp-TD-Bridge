@@ -1,4 +1,4 @@
-# Sharp-TD-Bridge (2D to 3D Gaussian Splatting)
+# MLSharp-TD-Bridge (2D to 3D Gaussian Splatting)
 
 > **TouchDesigner 中的一键 2D 转 3D 高斯泼溅工具 | Portable AI Bridge** > **Author:** 多多GemosDodo
 
