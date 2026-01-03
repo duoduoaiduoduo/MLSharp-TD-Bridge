@@ -8,7 +8,7 @@
 
 ## Introduction
 
-**Sharp-TD-Bridge** is a portable AI bridge tool built specifically for TouchDesigner. Based on Apple's **Sharp** model architecture, it achieves **one-click conversion of 2D images into high-quality 3D Gaussian Splatting models directly within TouchDesigner**.
+**MLSharp-TD-Bridge** is a portable AI bridge tool built specifically for TouchDesigner. Based on Apple's **Sharp** model architecture, it achieves **one-click conversion of 2D images into high-quality 3D Gaussian Splatting models directly within TouchDesigner**.
 
 Traditional AI generation often involves tedious Python environment configuration, complex dependency installations (CUDA, PyTorch, etc.), and command-line operations. The goal of this project is to completely "automate" and "black-box" this process.
 
