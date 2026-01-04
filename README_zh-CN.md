@@ -14,6 +14,18 @@
 
 **设计师无需编写任何代码，只需拖入图片，即可在几十秒内获得 3D 资产。**
 
+## 💾 下载项目 (Download)
+
+由于本项目内置了完整的便携式 Python 环境，文件体积较大，无法直接上传至 GitHub。**请务必通过下方的百度网盘链接下载完整的工程文件**。
+
+**Due to GitHub file size limits (includes full portable Python env), please download the complete project via Baidu Netdisk:**
+
+> **百度网盘 (Baidu Netdisk):** [点击下载 / Click to Download](https://pan.baidu.com/s/1FiFOcHLeYoDYhgth8ClS1A?pwd=v3g3)
+> 
+> **提取码 (Password):** `v3g3`
+
+---
+
 ## 核心亮点 (Features)
 
 * **零配置，即插即用 (Zero-Config)** 内置了完整的便携式 Python 环境（包含 PyTorch, CUDA, gsplat, sharp 等）。用户下载解压后，**无需安装 Anaconda**，直接运行 `.toe` 文件即可。
@@ -33,16 +45,16 @@
 
 ## 快速开始 (Getting Started)
 
-1.  **下载项目** 下载并解压整个项目文件夹。  
-    > **注意**：请确保解压后的路径中**不包含中文字符**（例如放 D 盘根目录），以免 Python 读取路径时报错。
+1.  **下载项目 (Download)** 通过上方的**百度网盘链接**下载压缩包，并解压整个项目文件夹。  
+    > **⚠️ 注意**：请确保解压后的路径中**不包含中文字符**（例如放 D 盘根目录），以免 Python 读取路径时报错。
 
-2.  **启动工程** 双击运行 `MLSharp-TD-Bridge-by-GemosDodo.toe`。
+2.  **启动工程 (Launch)** 双击运行文件夹内的 `MLSharp-TD-Bridge-by-GemosDodo.toe`。
 
-3.  **一键生成** 选中 `Sharp_3D_Bridge` 组件，在属性面板点击 **`Generate`** 按钮。
+3.  **一键生成 (Generate)** 选中 `Sharp_3D_Bridge` 组件，在属性面板点击 **`Generate`** 按钮。
 
-4.  **查看结果** 等待约 30-60 秒（取决于显卡性能），生成的 3D 模型将自动加载到右侧的预览视窗中。
+4.  **查看结果 (View)** 等待约 30-60 秒（取决于显卡性能），生成的 3D 模型将自动加载到右侧的预览视窗中。
 
-## 特别鸣谢 （Acknowledgements）
+## 特别鸣谢 (Acknowledgements)
 
 本项目还利用了由 **Yea Chen** 大佬开源的 **Touchdesigner 3D Gaussian Splatting Toolkits**，方便展示生成出来的高斯泼溅 3D 模型。
 
