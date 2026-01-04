@@ -1,6 +1,7 @@
 # MLSharp-TD-Bridge (2D to 3D Gaussian Splatting)
 
-> **One-click 2D to 3D Gaussian Splatting Tool for TouchDesigner | Portable AI Bridge** > **Author:** GemosDodo
+> **One-click 2D to 3D Gaussian Splatting Tool for TouchDesigner | Portable AI Bridge**
+> **Author:** GemosDodo
 
 [中文版 (Chinese Version)](./README_zh-CN.md) | [English Version](./README.md)
 
@@ -14,16 +15,30 @@ Traditional AI generation often involves tedious Python environment configuratio
 
 **Designers do not need to write a single line of code. Simply drag in an image, and obtain 3D assets within seconds.**
 
+## 💾 Download
+
+Due to GitHub file size limits (this project includes a fully portable Python environment), please download the complete project files via **Hugging Face**.
+
+> **Hugging Face (High Speed / Global):** [Click here to visit Repository](https://huggingface.co/GemosDodo/MLSharp-TD-Bridge)
+>
+> *Please go to the "Files and versions" tab and download the `.zip` file.*
+
+---
+
 ## Features
 
-* **Zero-Config & Plug-and-Play** Includes a complete portable Python environment (containing PyTorch, CUDA, gsplat, sharp, etc.). After downloading and unzipping, there is **no need to install Anaconda**. Just run the `.toe` file directly.
+* **Zero-Config & Plug-and-Play**
+  Includes a complete portable Python environment (containing PyTorch, CUDA, gsplat, sharp, etc.). After downloading and unzipping, there is **no need to install Anaconda**. Just run the `.toe` file directly.
 
-* **Fully Automated Workflow** With a single button click, the script automatically handles: `Save Image` -> `Clean Old Files` -> `AI Inference` -> `Rename Files` -> `Refresh 3D View`.
+* **Fully Automated Workflow**
+  With a single button click, the script automatically handles: `Save Image` -> `Clean Old Files` -> `AI Inference` -> `Rename Files` -> `Refresh 3D View`.
 
-* **Native TouchDesigner Integration** * **Input**: Supports any TOP image source (Movie File In, Noise, etc.).
+* **Native TouchDesigner Integration**
+    * **Input**: Supports any TOP image source (Movie File In, Noise, etc.).
     * **Output**: Generated results are automatically loaded back into a Point File In for immediate preview in the TD viewport.
 
-* 🛠 **Offline Privacy** All calculations are performed locally on your GPU. No internet connection is required, ensuring data privacy.
+* 🛠 **Offline Privacy**
+  All calculations are performed locally on your GPU. No internet connection is required, ensuring data privacy.
 
 ## Requirements
 
@@ -33,14 +48,18 @@ Traditional AI generation often involves tedious Python environment configuratio
 
 ## Getting Started
 
-1.  **Download the Project** Download and unzip the entire project folder.  
-    > **Note**: Please ensure the unzipped path **does not contain non-English characters** (e.g., placing it at the root of the D drive is recommended) to avoid Python path errors.
+1.  **Download the Project**
+    Download the project zip file from the **Hugging Face** link above and unzip the entire folder.
+    > **⚠️ Note**: Please ensure the unzipped file path **does not contain non-English characters** (e.g., `D:\MLSharp_Bridge`) to avoid Python path errors.
 
-2.  **Launch the Project** Double-click to run `MLSharp-TD-Bridge-by-GemosDodo.toe`.
+2.  **Launch the Project**
+    Double-click to run `MLSharp-TD-Bridge-by-GemosDodo.toe`.
 
-3.  **One-Click Generation** Select the `Sharp_3D_Bridge` component. In the custom parameters panel, click the **`Generate`** button.
+3.  **One-Click Generation**
+    Select the `Sharp_3D_Bridge` component. In the custom parameters panel, click the **`Generate`** button.
 
-4.  **View Results** Wait for approximately 30-60 seconds (depending on GPU performance). The generated 3D model will automatically load into the preview window on the right.
+4.  **View Results**
+    Wait for approximately 30-60 seconds (depending on GPU performance). The generated 3D model will automatically load into the preview window on the right.
 
 ## Acknowledgements
 
