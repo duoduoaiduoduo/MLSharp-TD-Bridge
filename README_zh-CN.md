@@ -20,7 +20,7 @@
 
 **Due to GitHub file size limits (includes full portable Python env), please download the complete project via Baidu Netdisk:**
 
-> **百度网盘 (Baidu Netdisk):** [点击下载 / Click to Download](https://pan.baidu.com/s/1FiFOcHLeYoDYhgth8ClS1A?pwd=v3g3)
+> **百度网盘 (Baidu Netdisk):** [点击下载 / Click to Download](https://pan.baidu.com/s/1CdKgvlUDEBoYldKr9qVYhw?pwd=czet)
 > 
 > **提取码 (Password):** `v3g3`
 
